@@ -1,6 +1,7 @@
-.indented {
-    padding-left: 50pt;
-    padding-right: 50pt;
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
 
 p.bold {
@@ -9,10 +10,11 @@ p.bold {
 
 p.size {
     font-size: 16px;
+    text-align: justify;
 }
 
-.futbol{
-    color:green;
+.futbol {
+    color: green;
     font-size: 58px;
 }
 
