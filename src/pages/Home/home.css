@@ -21,6 +21,13 @@
     margin-bottom: 20px;
 }
 
+.page-title-lower-Detail {
+    font-size: 16px;
+    color: black;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
 .city-name {
     cursor: pointer;
     font-size: 24px;
@@ -44,37 +51,157 @@
     margin-bottom: 20px;
 }
 
+.city-info-info {
+    text-align: left;
+}
+
 .city-image {
     width: 800px;
     height: auto;
 }
 
-@media screen
-    and (max-device-width: 640px) {
+@media screen and (max-device-width: 640px) {
     .page-title {
         font-size: 23px;
     }
+
     .page-title-lower {
         font-size: 16px;
     }
+
     .city-name {
         font-size: 20px;
     }
+
     .city-image {
         width: 275px;
+    }
+
+    .city-info iframe {
+        width: 100%;
+        height: 200px;
     }
 }
 
 
-@media screen and (min-device-width: 640px)
-    and (max-device-width: 1024px) {
+@media screen and (min-device-width: 640px) and (max-device-width: 1024px) {
     .page-title {
         font-size: 33px;
     }
+
     .page-title-lower {
         font-size: 20px;
     }
+
     .city-image {
         width: 550px;
     }
+
+    .city-info iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+p.header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p.header-other-names {
+    margin-top: -20px;
+}
+
+p.header-other-names-bold {
+    margin-top: -40px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.button-kirkland {
+    margin-top: -10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+button {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    padding: 5px 30px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+button:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+
+@keyframes ani {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+button:hover::before {
+    filter: blur(20px);
+}
+
+button:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
+HTML CSSResult Skip Results Iframe EDIT ON a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a {
+    background:
+        linear-gradient(to right,
+            rgba(100, 200, 200, 1),
+            rgba(100, 200, 200, 1)),
+        linear-gradient(to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgba(0, 100, 200, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+a:hover {
+    background-size: 0 3px, 100% 3px;
 }
