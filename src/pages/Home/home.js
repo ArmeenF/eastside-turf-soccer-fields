@@ -37,15 +37,11 @@ const Home = () => {
                 {showCityInfo['kirkland'] && (
                     <div className="city-info">
                         <img src={kirklandImage} alt="Kirkland" className="city-image" />
-                        <div>
-                            <h1 className='city-info-info'>Fields</h1>
-                            <p className='city-info-info header-other-names-bold'>----------</p>
-                        </div>
                         {kirklandFields.map((field, index) => (
                             <div key={index}>
                                 <p className='city-info-info header'>{field.name} - Click <a href={field.scheduleLink}>Here</a> For Schedule</p>
                                 <p className='city-info-info header-other-names'><a href={field.addressLink}>Address</a></p>
-                                <button className="show-map-button button" onClick={() => handleShowMapClick('kirkland', index)}>
+                                <button className="button" onClick={() => handleShowMapClick('kirkland', index)}>
                                     {field.showMap ? 'Hide Map' : 'Show Map'}
                                 </button>
                                 {field.showMap && (

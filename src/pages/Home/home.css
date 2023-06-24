@@ -61,16 +61,16 @@
     height: auto;
 }
 
-p.header {
+.header {
     font-weight: bold;
     font-size: 20px;
 }
 
-p.header-other-names {
+.header-other-names {
     margin-top: -20px;
 }
 
-p.header-other-names-bold {
+.header-other-names-bold {
     margin-top: -40px;
     font-weight: bold;
     font-size: 30px;
@@ -83,61 +83,33 @@ p.header-other-names-bold {
 }
 
 button {
-    margin-top: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-start;
     text-decoration: none;
     position: relative;
-    border: none;
-    font-size: 14px;
-    font-family: inherit;
-    color: #fff;
-    width: 9em;
-    height: 3em;
-    line-height: 2em;
-    text-align: center;
-    padding: 5px 30px;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 300%;
-    border-radius: 30px;
-    z-index: 1;
+    padding: 17px 60px 10px;
+    border-radius: 10px;
+    border: 0;
+    background-color: green;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all .3s ease;
+    box-shadow: rgb(0, 0, 0) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
 }
 
 button:hover {
-    animation: ani 8s linear infinite;
-    border: none;
-}
-
-@keyframes ani {
-    0% {
-        background-position: 0%;
-    }
-
-    100% {
-        background-position: 400%;
-    }
-}
-
-button:before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    z-index: -1;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 400%;
-    border-radius: 35px;
-    transition: 1s;
-}
-
-button:hover::before {
-    filter: blur(20px);
+    box-shadow: rgb(255, 247, 0) 0px 7px 0px 0px;
 }
 
 button:active {
-    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-color: rgb(255, 56, 86);
+    /*50, 168, 80*/
+    box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
 }
 
 HTML CSSResult Skip Results Iframe EDIT ON a {
@@ -191,6 +163,15 @@ a:hover {
     .city-info iframe {
         width: 90%;
         height: 200px;
+    }
+
+    .header {
+        font-size: 14px;
+    }
+
+    .header-other-names {
+        margin-top: -15px;
+        font-size: 14px;
     }
 
     button {
