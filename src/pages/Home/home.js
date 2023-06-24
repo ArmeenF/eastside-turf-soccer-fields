@@ -28,8 +28,7 @@ const Home = () => {
 
     return (
         <div className="home-container">
-            <h1 className="page-title">-- Welcome to Our Cities --</h1>
-            <h1 className="page-title-lower">Click a city to see the availability and supported reservations for turf fields.</h1>
+            <h1 className="page-title">Eastside Soccer Field Locator</h1>
             <h3 className="page-title-lower-Detail">More cities/fields to come soon*</h3>
             <div className="city">
                 <div className="city-name" onClick={() => handleCityClick('kirkland')}>

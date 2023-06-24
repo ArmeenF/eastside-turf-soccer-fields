@@ -10,7 +10,7 @@
 
 .page-title {
     font-size: 38px;
-    margin-top: -20px;
+    margin-top: -60px;
     margin-bottom: 20px;
 }
 
@@ -24,7 +24,7 @@
 .page-title-lower-Detail {
     font-size: 16px;
     font-style: italic;
-    color: black;
+    color: red;
     margin-top: -20px;
     margin-bottom: 20px;
 }
@@ -60,128 +60,6 @@
     width: 800px;
     height: auto;
 }
-
-/* Mobile Styles (max-device-width: 640px) */
-@media screen and (max-device-width: 640px) {
-    .page-title {
-        font-size: 22px;
-    }
-
-    .page-title-lower {
-        font-size: 16px;
-        text-align: justify;
-    }
-
-    .page-title-lower-Detail{
-        font-size: 12px;
-    }
-
-    .city-name {
-        font-size: 20px;
-    }
-
-    .city-image {
-        width: 100%;
-        max-width: 275px;
-    }
-
-    .city-info iframe {
-        width: 90%;
-        height: 200px;
-    }
-
-    button{
-        margin-bottom: 15px;
-    }
-}
-
-/* Tablet Styles (min-device-width: 641px) and (max-device-width: 1024px) */
-@media screen and (min-device-width: 641px) and (max-device-width: 1024px) {
-    .page-title {
-        font-size: 33px;
-    }
-
-    .page-title-lower {
-        font-size: 20px;
-    }
-
-    .city-image {
-        width: 100%;
-        max-width: 550px;
-    }
-
-    .city-info iframe {
-        width: 100%;
-        height: 300px;
-    }
-
-    button{
-        margin-bottom: 15px;
-    }
-}
-
-/* Desktop Styles (min-device-width: 1025px) */
-@media screen and (min-device-width: 1025px) {
-    .page-title {
-        /* Adjust font-size for desktop */
-    }
-
-    .page-title-lower {
-        /* Adjust font-size for desktop */
-    }
-
-    .city-image {
-        /* Adjust width for desktop */
-    }
-
-    .city-info iframe {
-        /* Adjust width and height for desktop */
-    }
-}
-
-
-/* @media screen and (max-device-width: 640px) {
-    .page-title {
-        font-size: 23px;
-    }
-
-    .page-title-lower {
-        font-size: 16px;
-    }
-
-    .city-name {
-        font-size: 20px;
-    }
-
-    .city-image {
-        width: 275px;
-    }
-
-    .city-info iframe {
-        width: 100%;
-        height: 200px;
-    }
-}
-
-
-@media screen and (min-device-width: 640px) and (max-device-width: 1024px) {
-    .page-title {
-        font-size: 33px;
-    }
-
-    .page-title-lower {
-        font-size: 20px;
-    }
-
-    .city-image {
-        width: 550px;
-    }
-
-    .city-info iframe {
-        width: 100%;
-        height: 300px;
-    }
-} */
 
 p.header {
     font-weight: bold;
@@ -284,4 +162,82 @@ a {
 
 a:hover {
     background-size: 0 3px, 100% 3px;
+}
+
+/* Mobile Styles (max-device-width: 640px) */
+@media screen and (max-device-width: 640px) {
+    .page-title {
+        font-size: 22px;
+    }
+
+    .page-title-lower {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .page-title-lower-Detail {
+        font-size: 12px;
+    }
+
+    .city-name {
+        font-size: 20px;
+    }
+
+    .city-image {
+        width: 100%;
+        max-width: 275px;
+    }
+
+    .city-info iframe {
+        width: 90%;
+        height: 200px;
+    }
+
+    button {
+        margin-bottom: 15px;
+    }
+}
+
+/* Tablet Styles (min-device-width: 641px) and (max-device-width: 1024px) */
+@media screen and (min-device-width: 641px) and (max-device-width: 1024px) {
+    .page-title {
+        font-size: 33px;
+    }
+
+    .page-title-lower {
+        font-size: 20px;
+    }
+
+    .city-image {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .city-info iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    button {
+        margin-bottom: 15px;
+    }
+}
+
+/* Desktop Styles (min-device-width: 1025px) */
+@media screen and (min-device-width: 1025px) {
+    .page-title {
+        /* Adjust font-size for desktop */
+    }
+
+    .page-title-lower {
+        /* Adjust font-size for desktop */
+    }
+
+    .city-image {
+        /* Adjust width for desktop */
+    }
+
+    .city-info iframe {
+        /* Adjust width and height for desktop */
+    }
 }
