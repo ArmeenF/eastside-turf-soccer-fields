@@ -1,0 +1,100 @@
+.kirkland-image {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    /* max-width: 100%; */
+    /* Make the image responsive */
+    height: auto;
+    /* Adjust the height proportionally */
+}
+
+.kirkland-content {
+    text-align: center;
+}
+
+.kirkland-field-schedule {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 20px;
+    /* Add some spacing */
+}
+
+.kirkland-field-address {
+    text-align: left;
+    margin-top: -20px;
+    /* Adjust the spacing */
+}
+
+.button-kirkland {
+    margin-top: 10px;
+    /* Adjust the spacing */
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    padding: 17px 60px 10px;
+    border-radius: 10px;
+    border: 0;
+    background-color: green;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all .3s ease;
+    box-shadow: rgb(0, 0, 0) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+}
+
+button:hover {
+    box-shadow: rgb(255, 247, 0) 0px 7px 0px 0px;
+}
+
+button:active {
+    background-color: rgb(255, 56, 86);
+    /*50, 168, 80*/
+    box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+a {
+    background:
+        linear-gradient(to right,
+            rgba(100, 200, 200, 1),
+            rgba(100, 200, 200, 1)),
+        linear-gradient(to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgba(0, 100, 200, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+a:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .kirkland-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        /* Add spacing between image and content */
+    }
+
+    .kirkland-field-schedule,
+    .kirkland-field-address,
+    .button-kirkland {
+        text-align: left;
+        /* Center align the text on smaller screens */
+    }
+}
